@@ -15,7 +15,7 @@ const callRestApi = async (id) => {
 
 function BirdDetails() {
   const { id } = useParams();
-  const img = faker.image.animals();
+  const img = faker.image.imageUrl(640, 480, 'bird', true)
 
   const [apiResponse, setApiResponse] = useState("");
   const details = apiResponse === "" ? [] : JSON.parse(apiResponse).data;
@@ -29,7 +29,7 @@ function BirdDetails() {
       <h1 className="text-center">
         {details.name} ({details.latin})
       </h1>
-      <div className="card">
+      <div className="card d-flex">
         <div className="w-70">
           <h5>Breeding: {details.breeding}</h5>
           <h5>Conservation: {details.conservation}</h5>

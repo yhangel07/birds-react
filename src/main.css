@@ -4,11 +4,37 @@
     margin: 2rem;
     padding: 2rem;
     border-radius: 0.5rem;
+}
+
+.max-20 {
+    max-width: 20%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.d-flex {
     display: flex;
+}
+
+.desc-limit {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 75ch;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .text-center {
     text-align: center;
+}
+
+.vw-100 {
+    width: 100vw;
 }
 
 .w-100 {
@@ -21,4 +47,8 @@
 
 .w-30 {
     width: 30%;
+}
+
+.w-25 {
+    width: 25%;
 }
