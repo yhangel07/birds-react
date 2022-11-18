@@ -1,4 +1,6 @@
+import cors from 'cors';
 import express, { Express, Request, Response } from 'express';
+
 import dotenv from 'dotenv';
 import birdRoute from './routes/birdRoute';
 
@@ -6,6 +8,7 @@ dotenv.config();
 
 const app: Express = express();
 const port = process.env.PORT;
+app.use(cors());
 
 app.use("/api", birdRoute);
 
